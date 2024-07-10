@@ -1,0 +1,20 @@
+<!-- accounts/templates/accounts/home.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Medical Portal Home</title>
+    <style>
+        body { font-family: Arial, sans-serif; background-color: #f4f4f4; margin: 0; padding: 0; }
+        .container { text-align: center; padding: 50px; }
+        .button { padding: 10px 20px; margin: 10px; border: none; background-color: #007bff; color: #fff; cursor: pointer; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to the Medical Portal</h1>
+        <a href="{% url 'signup' %}" class="button">Sign Up</a>
+        <a href="{% url 'login' %}" class="button">Login</a>
+    </div>
+</body>
+</html>
